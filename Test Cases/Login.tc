@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65402b5c-22a6-4dc6-8c57-c46224926a58</testCaseGuid>
+   <variable>
+      <defaultValue>findTestData('Login_Data').getValue(1, 1)</defaultValue>
+      <description></description>
+      <id>84cba7d0-fd99-4359-8e4e-99d68cea9e29</id>
+      <masked>false</masked>
+      <name>scenario_id</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Login_Data').getValue(2, 1)</defaultValue>
+      <description></description>
+      <id>3f87e237-ffc3-4cb5-aaff-3e5f06dcfddd</id>
+      <masked>false</masked>
+      <name>scenario_title</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Login_Data').getValue(3, 1)</defaultValue>
+      <description></description>
+      <id>93f497d0-b2e3-4245-b9b3-e6858699b1e5</id>
+      <masked>false</masked>
+      <name>testcase_id</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Login_Data').getValue(4, 1)</defaultValue>
+      <description></description>
+      <id>08b55472-0c6b-4adb-becb-fdac1cda44ea</id>
+      <masked>false</masked>
+      <name>testcase_title</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Login_Data').getValue(5, 1)</defaultValue>
+      <description></description>
+      <id>390de4ae-50aa-4a34-996c-89f847574439</id>
+      <masked>false</masked>
+      <name>email</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Login_Data').getValue(6, 1)</defaultValue>
+      <description></description>
+      <id>6830bb13-65ef-497b-8ab6-96ebb4917f6a</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Login_Data').getValue(7, 1)</defaultValue>
+      <description></description>
+      <id>91a6163d-52dd-4da2-9f2c-57c4719a6894</id>
+      <masked>false</masked>
+      <name>alert</name>
+   </variable>
+</TestCaseEntity>

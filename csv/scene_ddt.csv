@@ -1,0 +1,9 @@
+scenario_id,scenario_title,testcase_id,testcase_title,email,password,alert
+TS_Login_1,Check functionality of Login.,TC_Login_1-1,Login without fill any field,,,"The email field is required.
+The password field is required."
+TS_Login_1,Check functionality of Login.,TC_Login_1-2,Login using valid account,evoblackz@gmail.com,sharkz@7,-
+TS_Login_1,Check functionality of Login.,TC_Login_1-3,Login using unregister email account,evoblackz9@gmail.com,sharkz@8,Please check email and password combination.
+TS_Login_1,Check functionality of Login.,TC_Login_1-4,"Login using invalid password, but valid email account",evoblackz@gmail.com,tidakvalid,Please check email and password combination.
+TS_Login_1,Check functionality of Login.,TC_Login_1-5,Login using invalid email format,tidakvalid,tidakvalid,The email field must be a valid email.
+TS_Login_1,Check functionality of Login.,TC_Login_1-6,Login using fill the email only,evoblackz@gmail.com,,The password field is required.
+TS_Login_1,Check functionality of Login.,TC_Login_1-7,Login using fill the password only,,tidakvalid,The email field is required.
