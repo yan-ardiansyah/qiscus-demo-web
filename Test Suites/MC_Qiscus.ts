@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Login</name>
+   <name>MC_Qiscus</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -66,6 +66,57 @@
          <type>DATA_COLUMN</type>
          <value>alert</value>
          <variableId>91a6163d-52dd-4da2-9f2c-57c4719a6894</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c120b2c3-291c-4307-9b54-d28485a5d4ff</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Forget Password</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f552a0cd-03de-4af6-943f-3edeeae3d71c</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Forget_Password</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>f552a0cd-03de-4af6-943f-3edeeae3d71c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>scenario_id</value>
+         <variableId>d49f3ac2-1e78-44be-b44e-74d4d6e75301</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f552a0cd-03de-4af6-943f-3edeeae3d71c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>scenario_title</value>
+         <variableId>cebfc2cf-866c-47e8-a5ba-94de5f25de98</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f552a0cd-03de-4af6-943f-3edeeae3d71c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>testcase_id</value>
+         <variableId>69aa612d-9d0c-4eb3-901a-77a6e0a00d71</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f552a0cd-03de-4af6-943f-3edeeae3d71c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>testcase_title</value>
+         <variableId>737ae5f3-7aeb-46a3-8bc4-f5111f6c6bfb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f552a0cd-03de-4af6-943f-3edeeae3d71c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>email</value>
+         <variableId>4cb01f48-4036-4270-8f2a-00b91bb55090</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>f552a0cd-03de-4af6-943f-3edeeae3d71c</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>alert</value>
+         <variableId>9af6e1c5-2eda-4eba-8e3e-fb431ca2f567</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

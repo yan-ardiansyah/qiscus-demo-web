@@ -1,0 +1,6 @@
+scenario_id,scenario_title,testcase_id,testcase_title,email,alert
+TS_FPass_1 ,Check functionality of Forget Password ,TC_FPass_1-1,Click the Reset Password button without fill the email field,,The email field is required.
+TS_FPass_1 ,Check functionality of Forget Password ,TC_FPass_1-2,Click the Reset Password button with fill the valid email,evoblackz@gmail.com,An email has been sent. Please check your email!
+TS_FPass_1 ,Check functionality of Forget Password ,TC_FPass_1-3,Click the Reset Password button with fill the invalid email,uyabdvsv@gmail.com,user not found
+TS_FPass_1 ,Check functionality of Forget Password ,TC_FPass_1-4,Click the Reset Password button with fill the invalid email format,asdfwefasd,The email field must be a valid email.
+TS_FPass_1 ,Check functionality of Forget Password ,TC_FPass_1-5,Click link Back to login,,

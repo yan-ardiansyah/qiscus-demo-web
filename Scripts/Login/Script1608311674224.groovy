@@ -23,10 +23,13 @@ WebUI.comment((testcase_id + ' | ') + testcase_title)
 'Open Browser and go to website'
 WebUI.openBrowser(GlobalVariable.url)
 
+'Call datetime function'
 today = new Date()
 
+'create var todaysDate'
 String todaysDate = today.format('MM_dd_yy')
 
+'create nowTime'
 String nowTime = today.format('hh_mm_ss')
 
 'Maximize the browser window'
@@ -35,7 +38,9 @@ WebUI.maximizeWindow()
 'Wait page to load in 5 seconds'
 WebUI.waitForPageLoad(5)
 
-WebUI.takeScreenshot(GlobalVariable.ss_path + todaysDate + '-' + nowTime + '.png')
+'Take screenshot when website already loaded'
+WebUI.takeScreenshot((((GlobalVariable.ss_path + todaysDate) + '-') + nowTime) + 
+    '.png')
 
 'Verify Welcome Back text in login page appear'
 WebUI.verifyElementPresent(findTestObject('Login_Object/h2_Welcome Back'), 5)
@@ -65,9 +70,9 @@ WebUI.setText(findTestObject('Login_Object/input_pass'), password)
 'Click Sign In button'
 WebUI.click(findTestObject('Login_Object/button_Sign In'))
 
-WebUI.delay(3)
-
-WebUI.takeScreenshot(GlobalVariable.ss_path + testcase_id + '-' +todaysDate + '-' + nowTime + '.png')
+'Take screenshot when website already loaded'
+WebUI.takeScreenshot((((((GlobalVariable.ss_path + testcase_id) + '-') + todaysDate) + 
+    '-') + nowTime) + '.png')
 
 'Do switch function'
 switch (testcase_id) {
@@ -124,36 +129,50 @@ switch (testcase_id) {
         'Stop'
         break
     case 'TC_Login_1-4':
+        'Verify Failed text appear'
         WebUI.verifyElementPresent(findTestObject('Popup_Failed/Failed_title'), 
             5)
 
+        'Verify content of pop up alert equal with alert data'
         WebUI.verifyElementText(findTestObject('Popup_Failed/content_Please check email and password combination'), 
             alert)
 
+        'Verify button OK can clicked'
         WebUI.verifyElementClickable(findTestObject('Popup_Failed/button_OK'))
 
+        'Click button OK'
         WebUI.click(findTestObject('Popup_Failed/button_OK'))
 
+        'Stop'
         break
     case 'TC_Login_1-5':
+        'Verify alert invalid email format appear'
         WebUI.verifyElementPresent(findTestObject('Login_Object/alert-invalid email format'), 
             5)
 
+        'Verify alert invalid email format equal with alert data'
         WebUI.verifyElementText(findTestObject('Login_Object/alert-invalid email format'), 
             alert)
 
+        'Stop'
         break
     case 'TC_Login_1-6':
+        'Verify alert invalid password appear'
         WebUI.verifyElementPresent(findTestObject('Login_Object/alert_pass'), 5)
 
+        'Verify alert invalid password equal with alert data'
         WebUI.verifyElementText(findTestObject('Login_Object/alert_pass'), alert)
 
+        'Stop'
         break
     case 'TC_Login_1-7':
+        'Verify alert invalid email appear'
         WebUI.verifyElementPresent(findTestObject('Login_Object/alert_email'), 5)
 
+        'Verify alert invalid email equal with alert data'
         WebUI.verifyElementText(findTestObject('Login_Object/alert_email'), alert)
 
+        'Stop'
         break
     default:
         WebUI.comment('All case not running')

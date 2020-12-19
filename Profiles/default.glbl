@@ -9,4 +9,9 @@
       <initValue>'multichannel.qiscus.com'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Screenshots\\Screenshot_'</initValue>
+      <name>ss_path</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
