@@ -23,11 +23,19 @@ WebUI.comment((testcase_id + ' | ') + testcase_title)
 'Open Browser and go to website'
 WebUI.openBrowser(GlobalVariable.url)
 
+today = new Date()
+
+String todaysDate = today.format('MM_dd_yy')
+
+String nowTime = today.format('hh_mm_ss')
+
 'Maximize the browser window'
 WebUI.maximizeWindow()
 
 'Wait page to load in 5 seconds'
 WebUI.waitForPageLoad(5)
+
+WebUI.takeScreenshot(GlobalVariable.ss_path + todaysDate + '-' + nowTime + '.png')
 
 'Verify Welcome Back text in login page appear'
 WebUI.verifyElementPresent(findTestObject('Login_Object/h2_Welcome Back'), 5)
@@ -56,6 +64,10 @@ WebUI.setText(findTestObject('Login_Object/input_pass'), password)
 
 'Click Sign In button'
 WebUI.click(findTestObject('Login_Object/button_Sign In'))
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot(GlobalVariable.ss_path + testcase_id + '-' +todaysDate + '-' + nowTime + '.png')
 
 'Do switch function'
 switch (testcase_id) {
