@@ -26,10 +26,10 @@ WebUI.openBrowser(GlobalVariable.url)
 'Call datetime function'
 today = new Date()
 
-'create var todaysDate'
+'Create var todaysDate'
 String todaysDate = today.format('MM_dd_yy')
 
-'create nowTime'
+'Create nowTime'
 String nowTime = today.format('hh_mm_ss')
 
 'Maximize the browser window'
