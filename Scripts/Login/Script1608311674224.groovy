@@ -39,8 +39,7 @@ WebUI.maximizeWindow()
 WebUI.waitForPageLoad(5)
 
 'Take screenshot when website already loaded'
-WebUI.takeScreenshot((((GlobalVariable.ss_path + todaysDate) + '-') + nowTime) + 
-    '.png')
+WebUI.takeScreenshot((((GlobalVariable.ss_path + todaysDate) + '-') + nowTime) + '.png')
 
 'Verify Welcome Back text in login page appear'
 WebUI.verifyElementPresent(findTestObject('Login_Object/h2_Welcome Back'), 5)
@@ -52,8 +51,7 @@ WebUI.verifyElementPresent(findTestObject('Login_Object/input_email'), 5)
 WebUI.verifyElementPresent(findTestObject('Login_Object/input_pass'), 5)
 
 'Verify forget password link appear'
-WebUI.verifyElementPresent(findTestObject('Login_Object/link_Forgot Password'), 
-    5)
+WebUI.verifyElementPresent(findTestObject('Login_Object/link_Forgot Password'), 5)
 
 'Verify button Sign In in login page appear'
 WebUI.verifyElementPresent(findTestObject('Login_Object/button_Sign In'), 5)
@@ -71,8 +69,7 @@ WebUI.setText(findTestObject('Login_Object/input_pass'), password)
 WebUI.click(findTestObject('Login_Object/button_Sign In'))
 
 'Take screenshot when website already loaded'
-WebUI.takeScreenshot((((((GlobalVariable.ss_path + testcase_id) + '-') + todaysDate) + 
-    '-') + nowTime) + '.png')
+WebUI.takeScreenshot((((((GlobalVariable.ss_path + testcase_id) + '-') + todaysDate) + '-') + nowTime) + '.png')
 
 'Do switch function'
 switch (testcase_id) {
@@ -81,8 +78,7 @@ switch (testcase_id) {
         WebUI.verifyElementPresent(findTestObject('Login_Object/alert_email'), 5)
 
         'Get alert email text'
-        actual_alert_email = WebUI.getText(findTestObject('Login_Object/alert_email'), 
-            FailureHandling.STOP_ON_FAILURE)
+        actual_alert_email = WebUI.getText(findTestObject('Login_Object/alert_email'), FailureHandling.STOP_ON_FAILURE)
 
         'Print alert email text'
         println(actual_alert_email)
@@ -91,8 +87,7 @@ switch (testcase_id) {
         WebUI.verifyElementPresent(findTestObject('Login_Object/alert_pass'), 5)
 
         'Get alert password text'
-        actual_alert_pass = WebUI.getText(findTestObject('Login_Object/alert_pass'), 
-            FailureHandling.STOP_ON_FAILURE)
+        actual_alert_pass = WebUI.getText(findTestObject('Login_Object/alert_pass'), FailureHandling.STOP_ON_FAILURE)
 
         'Print alert password text'
         println(actual_alert_pass)
@@ -113,12 +108,10 @@ switch (testcase_id) {
         break
     case 'TC_Login_1-3':
         'Verify Failed text appear'
-        WebUI.verifyElementPresent(findTestObject('Popup_Failed/Failed_title'), 
-            5)
+        WebUI.verifyElementPresent(findTestObject('Popup_Failed/Failed_title'), 5)
 
         'Verify content of pop up alert equal with alert data'
-        WebUI.verifyElementText(findTestObject('Popup_Failed/content_Please check email and password combination'), 
-            alert)
+        WebUI.verifyElementText(findTestObject('Popup_Failed/content_Please check email and password combination'), alert)
 
         'Verify button OK can clicked'
         WebUI.verifyElementClickable(findTestObject('Popup_Failed/button_OK'))
@@ -130,12 +123,10 @@ switch (testcase_id) {
         break
     case 'TC_Login_1-4':
         'Verify Failed text appear'
-        WebUI.verifyElementPresent(findTestObject('Popup_Failed/Failed_title'), 
-            5)
+        WebUI.verifyElementPresent(findTestObject('Popup_Failed/Failed_title'), 5)
 
         'Verify content of pop up alert equal with alert data'
-        WebUI.verifyElementText(findTestObject('Popup_Failed/content_Please check email and password combination'), 
-            alert)
+        WebUI.verifyElementText(findTestObject('Popup_Failed/content_Please check email and password combination'), alert)
 
         'Verify button OK can clicked'
         WebUI.verifyElementClickable(findTestObject('Popup_Failed/button_OK'))
@@ -147,12 +138,10 @@ switch (testcase_id) {
         break
     case 'TC_Login_1-5':
         'Verify alert invalid email format appear'
-        WebUI.verifyElementPresent(findTestObject('Login_Object/alert-invalid email format'), 
-            5)
+        WebUI.verifyElementPresent(findTestObject('Login_Object/alert-invalid email format'), 5)
 
         'Verify alert invalid email format equal with alert data'
-        WebUI.verifyElementText(findTestObject('Login_Object/alert-invalid email format'), 
-            alert)
+        WebUI.verifyElementText(findTestObject('Login_Object/alert-invalid email format'), alert)
 
         'Stop'
         break
@@ -179,4 +168,6 @@ switch (testcase_id) {
 
         break
 }
+
+WebUI.closeBrowser()
 
